@@ -1,0 +1,21 @@
+<beans>
+    <bean id="student" class="ccgogoing.architecture.spring.pojo.Student">
+        <!-- String类型 -->
+        <property name="name" value="zengkeyan"></property>
+        <!-- 引用类型 -->
+        <property name="course" ref="course"></property>
+    </bean>
+
+    <!-- 该类有一个初始化方法 -->
+    <bean id="course" class="ccgogoing.architecture.spring.pojo.Course"
+          init-method="init">
+        <!-- String类型 -->
+        <property name="name" value="spring"></property>
+        <!-- Integer类型 -->
+        <property name="age" value="18"></property>
+
+        <!-- 		<constructor-arg index="0" value="james" /> -->
+    </bean>
+
+    <!-- <context:property-placeholder location="" /> -->
+</beans>
