@@ -1,0 +1,36 @@
+* 如何看源码
+	* 要找到入口（按图索骥）
+	* 要分清主线（我们主要想要看的源码流程是哪个）
+	* 要参考资料（网上的资料、我提供的资料等等）
+	* 一定想办法弄清楚英文的含义
+	* 一定要写个测试代码之后，使用debug模式断点跟踪
+	
+* spring应用的入口在哪？
+	* Spring基础就是一个IoC容器（BeanFactory）
+	* 目前我们使用的是ApplicationContext对象去创建IoC容器（高级IoC容器）
+
+
+* BeanFactory接口介绍：只能提供回去单个bean的方法
+	* AutowireCapableBeanFactory子接口：可以将第三方的bean进行自动装配
+	* ConfigurableBeanFactory子接口：对BeanFactory实现配置管理
+	* ListableBeanFactory子接口：可以将BeanFactory中的Bean进行全部获取并遍历
+
+* 设计模式有一个接口隔离原则（每一个接口，尽量只提供一个标准）	
+
+* BeanDefinition：存储bean标签的信息，作用是为了最后生成bean的实例
+
+* Bean：spring生成的对象
+
+* BeanFactoryPostProcessor：BeanFactory后置处理器
+	* 作用是为了对BeanDefinition对象进行修改	
+* BeanPostProcessor：Bean后置处理器
+	* 作用是为了对生成的Bean对象进行修改
+	
+* spring中如果方法前缀是以do开头的，那么该方法就是实际干活的方法
+
+* BeanFactory和FactoryBean的区别
+	BeanFactory：它是存放Bean的工厂
+	FactoryBean：它是一个需要被存放在BeanFactory中的一个JavaBean，只是这个JavaBean的作用是为了产生另一些JavaBean。
+	
+	例子：鸡场BeanFactory ---  鸡FactoryBean --- 生产鸡蛋
+	
