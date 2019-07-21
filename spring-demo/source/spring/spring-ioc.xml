@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/tx
+        http://www.springframework.org/schema/tx/spring-tx.xsd
+        http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop.xsd">
+	<bean id="course"  class="com.kkb.spring.ioc.xml.po.Course" >
+		<property name="name" value="english"></property>
+	</bean>
+	<bean id="student" class="com.kkb.spring.ioc.xml.po.Student" init-method="initMethod" destroy-method="destroyMethod">
+		<property name="name" value="zhangsan"></property>
+		<property name="course" ref="course"></property>
+	</bean>
+	<bean></bean>
+	<aop:config>
+		<aop:pointcut expression="" id=""/>
+		<aop:aspect id="" ref="">
+			
+			<aop:after method="" pointcut=""/>
+		</aop:aspect>
+	</aop:config>
+</beans>

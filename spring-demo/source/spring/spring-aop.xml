@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+	<!-- 配置目标对象 -->
+	<bean class="com.kkb.spring.aop.target.UserServiceImpl"></bean>
+	<!-- 配置通知类 -->
+	<bean id="myAdvice" class="com.kkb.spring.aop.advice.MyAdvice"></bean>
+	<!-- AOP配置 -->
+	<aop:config>
+		<!-- 这是使用的Spring AOP实现 -->
+		<!-- <aop:advisor advice-ref="" pointcut=""/> -->
+
+		<!-- 这是使用的Spring + AspectJ 的AOP实现 -->
+		<!-- 配置AOP切面，切面是由通知和切入点组成的 -->
+		<!-- aspect是切面，它由advice和pointcut组成 -->
+		<!-- ref指定的是advice -->
+
+		<!-- <aop:advisor advice-ref="" /> -->
+		<aop:pointcut expression="" id="" />
+		<aop:aspect ref="myAdvice">
+			<!-- 对哪些切入点进行功能增强由pointcut属性指定 -->
+			<!-- 增强哪些功能由method属性指定，它指定的方法是advice类中的方法 -->
+			<!-- 什么时候织入？通过aop:before等标签来指定 -->
+			<aop:before method="before"
+				pointcut="execution(* *..*.*ServiceImpl.*(..))" />
+
+			<!-- 对应 AspectJAfterAdvice 通知类 -->
+			<!-- AspectJAfterAdvice构造参数： -->
+			<!-- 第一个构造参数：method属性指定的方法的Method对象 -->
+			<!-- 第二个构造参数：pointcut属性对应的切入点对象 -->
+			<!-- 第三个构造参数：产生myAdvice类的工厂对象 -->
+
+			<!-- 第二个参数的作用：确定哪些类运行时，调用AspectJAfterAdvice的after方法 -->
+			<!-- 第一个参数和第三个参数的作用：一旦调用after方法的时候，就会调用method.invoke(obj,args) -->
+
+			<!-- method属性：对应myAdvice类的after方法 -->
+			<!-- pointcut属性：指定切入点类AspectJExpressionPointcut -->
+			<aop:after method="after"
+				pointcut="execution(* *..*.*ServiceImpl.*(..))" />
+		</aop:aspect>
+	</aop:config>
+
+</beans>

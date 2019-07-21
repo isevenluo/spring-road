@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/tx
+        http://www.springframework.org/schema/tx/spring-tx.xsd
+        http://www.springframework.org/schema/mvc
+        http://www.springframework.org/schema/mvc/spring-mvc.xsd
+        http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop.xsd">
+	<!-- 扫描Controller类 -->
+	<context:component-scan
+		base-package="com.kkb.spring.mvc"></context:component-scan>
+
+	<!-- 开启springmvc的注解驱动：同时会注册处理器适配器和映射器的BeanDefinition -->
+	<mvc:annotation-driven />
+	<!-- 配置视图解析器 -->
+	<mvc:view-resolvers>
+		<bean
+			class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+			<property name="prefix" value="/WEB-INF/"></property>
+			<property name="suffix" value=".jsp"></property>
+		</bean>
+	</mvc:view-resolvers>
+
+	<!-- 配置拦截器 -->
+	<mvc:interceptors>
+		<!-- 配置全局拦截器 -->
+		<bean
+			class="com.kkb.spring.mvc.controller.interceptor.MyHandlerInterceptor"></bean>
+		<!-- 配置指定URL对应的拦截器 -->
+		<!-- 
+		<mvc:interceptor>
+			<mvc:mapping path="/login/**" />
+			<bean class="com.kkb.spring.mvc.controller.interceptor.MyHandlerInterceptor"></bean>
+		</mvc:interceptor> 
+		-->
+	</mvc:interceptors>
+</beans>
