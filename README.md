@@ -1,6 +1,6 @@
 # Spring 江湖路
 
-#### 介绍
+## 介绍
 <font color="red">**《Spring江湖路》，持续更新中。。。**</font> 
 
 > 在写这个系列时，笔者已经工作5年了。会时而会感到迷茫，因为开发这么多年，学习了不少技术，做了很多项目，但是回过头来发现自己要让自己说点擅长的技术，好像还真没自信说出口，说业务吧，好像也有点半瓶子咣当。
@@ -26,28 +26,30 @@
 ![Spring江湖路线](https://gitee.com/isevenluo/pic-bed/raw/master/img/20210624231628.png)
 
 
+## 路线规划
 
+### 构建Web应用
 
-#### 构建Web应用
+#### Spring Boot
 
 - Spring Boot 永远滴神！10分钟快速入门，新手必备
 
 
 
 
-#### 安装教程
+### 安装教程
 
 1.  xxxx
 2.  xxxx
 3.  xxxx
 
-#### 使用说明
+### 使用说明
 
 1.  xxxx
 2.  xxxx
 3.  xxxx
 
-#### 参与贡献
+### 参与贡献
 
 1.  Fork 本仓库
 2.  新建 Feat_xxx 分支
@@ -55,7 +57,7 @@
 4.  新建 Pull Request
 
 
-#### 特技
+### 特技
 
 1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
 2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
