@@ -12,7 +12,7 @@ import javax.persistence.Id;
  */
 @Entity
 @Data
-public class Vedio {
+public class Video {
 
     @Id // 主键
     @GeneratedValue(strategy = GenerationType.AUTO) // 值是自动生成的

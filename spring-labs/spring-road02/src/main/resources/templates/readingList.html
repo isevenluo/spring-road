@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>Reading List</title>
+        <link rel="stylesheet" th:href="@{/style.css}"></link>
+    </head>
+    <body>
+        <h2>Your Reading List</h2>
+        <div th:unless="${#lists.isEmpty(videos)}">
+            <dl th:each="video : ${videos}">
+                <dt class="bookHeadline">
+                    <span th:text="${video.title}">Title</span> by
+                    <span th:text="${video.author}">Author</span>
+                    (ISBN: <span th:text="${video.isbn}">ISBN</span>)
+                </dt>
+                <dd class="bookDescription">
+                    <span th:if="${video.description}" th:text="${video.description}">Description</span>
+                    <span th:if="${video.description eq null}">No description available</span>
+                </dd>
+            </dl>
+        </div>
+        <div th:if="${#lists.isEmpty(videos)}">
+            <p>You have no books in your book list</p>
+        </div>
+        <hr/>
+        <h3>Add a video</h3>
+        <form method="POST">
+            <label for="title">Title:</label>
+            <input type="text" name="title" size="50"></input><br/>
+            <label for="author">Author:</label>
+            <input type="text" name="author" size="50"></input><br/>
+            <label for="isbn">ISBN:</label>
+            <input type="text" name="isbn" size="15"></input><br/>
+            <label for="description">Description:</label><br/>
+            <textarea name="description" cols="80" rows="5"></textarea><br/>
+            <input type="submit"></input>
+        </form>
+    </body>
+</html>
