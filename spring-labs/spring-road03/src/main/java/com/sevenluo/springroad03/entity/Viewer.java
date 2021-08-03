@@ -1,6 +1,8 @@
 package com.sevenluo.springroad03.entity;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -12,25 +14,31 @@ import java.util.Collection;
 
 @Entity
 @Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class Viewer implements UserDetails {
-
     @Id
-    private String usernama;
-
-    private String fullname;
+    private String username;
 
     private String password;
 
+    private String role;
 
-    // UserDetails methods
+
+
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
-        return Arrays.asList(new SimpleGrantedAuthority("READER"));
+        return Arrays.asList(new SimpleGrantedAuthority(role));
+    }
+
+    @Override
+    public String getPassword() {
+        return password;
     }
 
     @Override
     public String getUsername() {
-        return usernama;
+        return username;
     }
 
     @Override
