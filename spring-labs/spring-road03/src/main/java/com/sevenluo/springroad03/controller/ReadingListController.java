@@ -32,6 +32,6 @@ public class ReadingListController {
     public String addToReadingList(@PathVariable("viewer") String viewer, Video video) {
         video.setReader(viewer);
         readingListRepository.save(video);
-        return "redirect:/{viewer}";
+        return "redirect:/viewerList/{viewer}";
     }
 }
