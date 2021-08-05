@@ -44,16 +44,11 @@ Spring 框架我在过往的每一家公司都是后台框架的必不可少的�
 - [Spring Boot 永远滴神！10分钟快速入门，新手程序员必备](https://zhuanlan.zhihu.com/p/388730365)
 - [创建 SpringBoot 应用程序的三种方式，你都知道了？](https://mp.weixin.qq.com/s?__biz=MzkxODI2MDMzMA==&mid=2247483972&idx=1&sn=f5eca57c0dbdc920d349454bae2addfc&chksm=c1b55d41f6c2d45727df345fc7a9eff8be07b1f3438442694000fe596e42bab4a9c022d95451&token=748723008&lang=zh_CN#rd)
 - [人手一套！本地编译Spring源码，让你的阅读如丝般顺滑](https://mp.weixin.qq.com/s?__biz=MzkxODI2MDMzMA==&mid=2247484026&idx=1&sn=cb7cf56b220fb0d8efc18dad92f2583c&chksm=c1b55d7ff6c2d4698edcc0cfd8873be32d9b2987ad02bb8c2c24fa1474721c96d147143980dc&token=748723008&lang=zh_CN#rd)
-- 
+- [Spring Boot如何覆盖自动配置](https://zhuanlan.zhihu.com/p/396489005)
 
 
 
 
 
-### 参与贡献
 
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
 
