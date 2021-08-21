@@ -1,9 +1,0 @@
-spring:
-  datasource:
-    url: jdbc:mysql://localhost/springroad
-    username: root
-    password: sevenluo
-  jpa:
-    hibernate:
-      ddl-auto: update
-    show-sql: true

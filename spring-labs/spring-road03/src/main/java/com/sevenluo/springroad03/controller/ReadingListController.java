@@ -15,14 +15,13 @@ import org.springframework.web.bind.annotation.RestController;
 import javax.annotation.Resource;
 import java.util.List;
 
-@RestController
+@Controller
 public class ReadingListController {
 
-    @Resource
+    @Autowired
     private ReadingListRepository readingListRepository;
 
-    @Resource
-    private MyProperties myProperties;
+
 
     @GetMapping(value = "/viewerList/{viewer}")
     public String readersVideos(@PathVariable("viewer") String viewer, Model model) {
