@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="delegatedBuild" value="true" />
+        <option name="testRunner" value="GRADLE" />
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/spring-road02" />
+        <option name="gradleHome" value="$USER_HOME$/.gradle/wrapper/dists/gradle-6.8.3-bin/9bu66hwszp2ffquclkz0kzdcs/gradle-6.8.3" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/spring-road02" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="delegatedBuild" value="true" />
+        <option name="testRunner" value="GRADLE" />
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/spring-road03" />
+        <option name="gradleHome" value="$USER_HOME$/.gradle/wrapper/dists/gradle-6.8.3-bin/9bu66hwszp2ffquclkz0kzdcs/gradle-6.8.3" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/spring-road03" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="delegatedBuild" value="false" />
+        <option name="testRunner" value="PLATFORM" />
+        <option name="distributionType" value="LOCAL" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/spring-road04" />
+        <option name="gradleHome" value="$USER_HOME$/.gradle/wrapper/dists/gradle-7.1.1-bin/f29rtwfnc96ub43tt7p47zsru/gradle-7.1.1" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/spring-road04" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>
