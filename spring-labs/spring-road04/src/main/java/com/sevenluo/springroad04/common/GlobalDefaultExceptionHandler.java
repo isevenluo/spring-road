@@ -17,7 +17,8 @@ class GlobalDefaultExceptionHandler {
     @ExceptionHandler({MethodArgumentNotValidException.class, ConstraintViolationException.class})
     public Map argumentErrorHandler(HttpServletRequest req, Exception e) throws Exception {
         Map map = new HashMap();
-        map.put("error","参数不合法");
-        map.put("param",req.getParameterMap());
+        map.put("error", "参数不合法");
+        map.put("param", req.getParameterMap());
         return map;
-}}
+    }
+}

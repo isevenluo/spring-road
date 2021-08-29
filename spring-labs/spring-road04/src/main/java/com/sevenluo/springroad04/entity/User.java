@@ -35,7 +35,4 @@ public class User {
     @NotEmpty
     @JsonProperty(value = "name")
     private String name;
-
-
-
 }

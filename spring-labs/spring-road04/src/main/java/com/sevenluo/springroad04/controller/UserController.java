@@ -1,9 +1,11 @@
 package com.sevenluo.springroad04.controller;
 
 import com.sevenluo.springroad04.entity.JsonUser;
+import com.sevenluo.springroad04.entity.MyProperties;
 import com.sevenluo.springroad04.entity.User;
 import com.sevenluo.springroad04.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
@@ -34,6 +36,9 @@ public class UserController {
     @Autowired(required = false)
     private User user;
 
+    @Autowired
+    private MyProperties myProperties;
+
 
     @PostMapping("/id")
     public ResponseEntity<List<User>> getUser(@RequestParam long id) {
@@ -41,8 +46,13 @@ public class UserController {
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<List<User>> findById( @PathVariable @Max(value = 5,message = "超过 id 的范围了") long id) {
+    public ResponseEntity<List<User>> findById(@Valid @PathVariable @Max(value = 5,message = "超过 id 的范围了") long id) {
         return new ResponseEntity(userService.findById(id),HttpStatus.OK);
+    }
+
+    @GetMapping("/getConfig")
+    public ResponseEntity<List<User>> getProperties() {
+        return new ResponseEntity(myProperties,HttpStatus.OK);
     }
 
     @PostMapping("/users")

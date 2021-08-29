@@ -3,7 +3,6 @@ package com.sevenluo.springroad04.service;
 import com.sevenluo.springroad04.dao.UserDao;
 import com.sevenluo.springroad04.entity.User;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

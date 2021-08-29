@@ -1,0 +1,15 @@
+my:
+  books:
+    - bookName: jvm思想
+      id: 1
+  name: 七哥
+  username: sevenluo
+spring:
+  datasource:
+    password: sevenluo
+    url: jdbc:mysql://localhost:3306/springroad?useSSL=false
+    username: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
