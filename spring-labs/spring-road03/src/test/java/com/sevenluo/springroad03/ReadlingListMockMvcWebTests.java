@@ -17,7 +17,6 @@ import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.springframework.web.context.WebApplicationContext;
 
 import static org.hamcrest.Matchers.*;
-import static org.springframework.security.test.web.servlet.setup.SecurityMockMvcConfigurers.springSecurity;
 
 /**
  * @微信公众号: 七哥聊编程
@@ -28,9 +27,7 @@ import static org.springframework.security.test.web.servlet.setup.SecurityMockMv
  * @author: 程序员七哥
  * @create: 2021-08-29 20:57
  **/
-@ExtendWith(SpringExtension.class) // 开启Spring集成测试支持
-@SpringBootTest(classes = SpringRoad03Application.class)  //1.4版本之前用的是 @SpringApplicationConfiguration(classes = SpringRoad03Application.class)
-@WebAppConfiguration // 声明创建的应用上下文是一个 WebApplicationContext
+@SpringBootTest
 public class ReadlingListMockMvcWebTests {
 
     @Autowired
@@ -40,8 +37,7 @@ public class ReadlingListMockMvcWebTests {
 
     @BeforeEach
     public void setupMockMvc() {
-        mockMvc = MockMvcBuilders.webAppContextSetup(webApplicationContext)
-                .apply(springSecurity()).build();
+        mockMvc = MockMvcBuilders.webAppContextSetup(webApplicationContext).build();
     }
 
     @Test
