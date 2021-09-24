@@ -6,6 +6,7 @@ plugins {
     id 'com.gorylenko.gradle-git-properties' version '2.2.4'
 }
 
+
 group = 'com.sevenluo'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '11'
@@ -31,9 +32,10 @@ dependencies {
     implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:2.1.2'
     compileOnly 'org.projectlombok:lombok'
     runtimeOnly 'com.h2database:h2'
+    implementation 'jakarta.servlet:jakarta.servlet-api:5.0.0'
     annotationProcessor 'org.projectlombok:lombok'
-    testImplementation 'org.springframework.boot:spring-boot-starter-junit'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
 
 }
 
