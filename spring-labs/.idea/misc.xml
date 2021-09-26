@@ -5,6 +5,7 @@
     <file type="web" url="file://$PROJECT_DIR$/spring-road02" />
     <file type="web" url="file://$PROJECT_DIR$/spring-road03" />
     <file type="web" url="file://$PROJECT_DIR$/spring-road04" />
+    <file type="web" url="file://$PROJECT_DIR$/spring-road05" />
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />

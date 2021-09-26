@@ -35,6 +35,9 @@ dependencies {
     implementation 'jakarta.servlet:jakarta.servlet-api:5.0.0'
     annotationProcessor 'org.projectlombok:lombok'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    // https://mvnrepository.com/artifact/mysql/mysql-connector-java
+    implementation group: 'mysql', name: 'mysql-connector-java', version: '8.0.25'
+
 
 
 }
