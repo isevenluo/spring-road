@@ -10,7 +10,7 @@ spring:
   profiles:
     include: production
   datasource:
-    url: jdbc:mysql://localhost:3306/springroad
+    url: jdbc:mysql://localhost:3306/springroad?useUnicode=true&characterEncoding=utf8&useSSL=false
     username: root
     password: sevenluo
   jpa:
@@ -19,3 +19,4 @@ spring:
       ddl-auto: none
   flyway:
     baseline-on-migrate: true
+    locations: classpath:db/migration/

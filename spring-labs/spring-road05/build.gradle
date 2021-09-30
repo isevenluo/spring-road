@@ -23,8 +23,6 @@ dependencies {
     annotationProcessor 'org.projectlombok:lombok'
     implementation 'org.springframework.boot:spring-boot-starter-actuator'
 
-
-
 }
 
 test {
