@@ -1,6 +1,6 @@
-package com.sevenluo.springroad05.service;
+package com.sevenluo.springroad06.service;
 
-import com.sevenluo.springroad05.entity.Video;
+import com.sevenluo.springroad06.entity.Video;
 
 import java.util.List;
 

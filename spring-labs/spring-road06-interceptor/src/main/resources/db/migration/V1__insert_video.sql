@@ -1,0 +1,1 @@
+insert into video(id, author, description, isbn, reader, title) values ('3','xiaobai','小白云1','3','xiaobai3','test3');

@@ -1,4 +1,4 @@
-package com.sevenluo.springroad05;
+package com.sevenluo.springroad06;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,8 +1,8 @@
-package com.sevenluo.springroad05.dao;
+package com.sevenluo.springroad06.dao;
 
 
 
-import com.sevenluo.springroad05.entity.Video;
+import com.sevenluo.springroad06.entity.Video;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;

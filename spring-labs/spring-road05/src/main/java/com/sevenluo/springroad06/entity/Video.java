@@ -1,4 +1,4 @@
-package com.sevenluo.springroad05.entity;
+package com.sevenluo.springroad06.entity;
 
 import lombok.Data;
 

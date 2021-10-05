@@ -1,9 +1,9 @@
-package com.sevenluo.springroad05.controller;
+package com.sevenluo.springroad06.controller;
 
 
-import com.sevenluo.springroad05.dao.ReadingListRepository;
-import com.sevenluo.springroad05.entity.Video;
-import com.sevenluo.springroad05.service.VideoService;
+import com.sevenluo.springroad06.dao.ReadingListRepository;
+import com.sevenluo.springroad06.entity.Video;
+import com.sevenluo.springroad06.service.VideoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

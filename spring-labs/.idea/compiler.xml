@@ -8,10 +8,12 @@
         <processorPath useClasspath="false">
           <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.18.20/18bcea7d5df4d49227b4a0743a536208ce4825bb/lombok-1.18.20.jar" />
         </processorPath>
-        <module name="spring-road05.main" />
+        <module name="spring-road06-interceptor.main" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="com.sevenluo.spring-road05.main" target="11" />
+      <module name="com.sevenluo.spring-road05.test" target="11" />
       <module name="spring-road01" target="11" />
     </bytecodeTargetLevel>
   </component>
