@@ -14,9 +14,17 @@ spring:
     username: root
     password: sevenluo
   jpa:
-    database-platform: org.hibernate.dialect.MySQLDialect
+    # Spring Boot2.x \u5F00\u59CBHibernate\u521B\u5EFA\u6570\u636E\u5E93\u9ED8\u8BA4\u662FMyISAM\u5F15\u64CE\uFF0C\u9700\u8981\u5207\u6362\u56DEInnoDB\u6A21\u5F0F\u5F15\u64CE
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
     hibernate:
       ddl-auto: none
   flyway:
     baseline-on-migrate: true
     locations: classpath:db/migration/
+  redis:
+    port: 6379
+    password:
+    host: 127.0.0.1
+  cache:
+    type: redis                    # \u6307\u5B9A\u7F13\u5B58\u7C7B\u578B
+    cache-names: demoCache         # \u6307\u5B9A\u7F13\u5B58\u7A7A\u95F4\u540D\u79F0

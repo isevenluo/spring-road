@@ -13,6 +13,7 @@
             <option value="$PROJECT_DIR$/spring-road02" />
           </set>
         </option>
+        <option name="resolveExternalAnnotations" value="false" />
       </GradleProjectSettings>
       <GradleProjectSettings>
         <option name="delegatedBuild" value="true" />
