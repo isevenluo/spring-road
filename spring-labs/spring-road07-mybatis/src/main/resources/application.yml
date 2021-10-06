@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/springroad?useUnicode=true&characterEncoding=utf8&useSSL=false
+    username: root
+    password: sevenluo
+    type: com.alibaba.druid.pool.DruidDataSource
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+server:
+  port: 8888

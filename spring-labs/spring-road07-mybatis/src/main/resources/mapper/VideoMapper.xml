@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sevenluo.springroad07.dao.VideoMapper">
+    <insert id="saveVideo" useGeneratedKeys="true" keyProperty="id">
+        insert into video(id, author, description, isbn, reader, title) VALUES
+            (#{id},#{author},#{description},#{isbn},#{reader},#{title})
+    </insert>
+    
+    <select id="findVideoByReader" resultType="com.sevenluo.springroad07.entity.Video">
+        select * from video where reader = #{reader};
+    </select>
+</mapper>
