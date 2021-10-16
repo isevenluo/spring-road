@@ -37,14 +37,17 @@ Spring 框架我在过往的每一家公司都是后台框架的必不可少的�
 
 ### 构建Web应用
 
-#### Spring Boot
-
 - [Spring Boot 永远滴神！10分钟快速入门，新手程序员必备](https://zhuanlan.zhihu.com/p/388730365)
-- [创建 SpringBoot 应用程序的三种方式，你都知道了？](https://mp.weixin.qq.com/s?__biz=MzkxODI2MDMzMA==&mid=2247483972&idx=1&sn=f5eca57c0dbdc920d349454bae2addfc&chksm=c1b55d41f6c2d45727df345fc7a9eff8be07b1f3438442694000fe596e42bab4a9c022d95451&token=748723008&lang=zh_CN#rd)
-- [人手一套！本地编译Spring源码，让你的阅读如丝般顺滑](https://mp.weixin.qq.com/s?__biz=MzkxODI2MDMzMA==&mid=2247484026&idx=1&sn=cb7cf56b220fb0d8efc18dad92f2583c&chksm=c1b55d7ff6c2d4698edcc0cfd8873be32d9b2987ad02bb8c2c24fa1474721c96d147143980dc&token=748723008&lang=zh_CN#rd)
-- [Spring Boot如何覆盖自动配置](https://zhuanlan.zhihu.com/p/396489005)
-- [Spring Boot 属性配置优先级](https://mp.weixin.qq.com/s?__biz=MzkxODI2MDMzMA==&mid=2247484251&idx=1&sn=46c6f263dcdf9d47caa220c84e414a8b&chksm=c1b55c5ef6c2d548acf3222a7e3f62e554bca9f01f204d2fa290942168f460fb11a1642ec52d&token=27890440&lang=zh_CN#rd)
-- [安排上了！一文掌握 Spring Boot 常用注解](https://mp.weixin.qq.com/s?__biz=MzkxODI2MDMzMA==&mid=2247484397&idx=1&sn=c15417fbd3f58ab744f9d244857733da&chksm=c1b55ce8f6c2d5fea764dc9d52e9a3ac3ac11b65007a9aa88ff9248af4a29d600e9600eb062f&token=27890440&lang=zh_CN#rd)
+- [创建 SpringBoot 应用程序的三种方式，你都知道了？](https://mp.weixin.qq.com/s/oLPD6Kwoyavay1nctZPmBQ)
+- [人手一套！本地编译Spring源码，让你的阅读如丝般顺滑](https://mp.weixin.qq.com/s/MMVJgbsBqaAipeASU6BrHg)
+- [Spring Boot如何覆盖自动配置](https://mp.weixin.qq.com/s/b2VtIfjeW_yQ-VXbCHTRxg)
+- [Spring Boot 属性配置优先级](https://mp.weixin.qq.com/s/UWT2nvI9VdEs8v0-eRkYGQ)
+- [安排上了！一文掌握 Spring Boot 常用注解](https://mp.weixin.qq.com/s/lAaZ3z-h_AAW5Y0qw5ZjdA)
+- [Spring Boot应用单元测试如何写？](https://mp.weixin.qq.com/s/I0T_NxnzIJ58EoOJIlWS2w)
+- [一文掌握Actuator，Spring Boot应用监控你想知道的都在这里](https://mp.weixin.qq.com/s/_Cx6eDG6ViMJrTm-4aQJ2A)
+- [手把手教你 Spring Boot 中如何使用 MyBatis]()
+- [不必安装，快速使用各种数据库，Spawn了解一下！](https://mp.weixin.qq.com/s/goVD8miL-NQN3b9b-nhwcQ)
+- [Flyway数据库迁移库介绍与使用](https://mp.weixin.qq.com/s/snVXseHkaR1FJ9O3ojizfQ)
 
 
 
