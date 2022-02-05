@@ -1,0 +1,30 @@
+server:
+  port: 8081
+
+# 加入 actuator 依赖后，添加 info 终端显示信息
+info:
+  auth: qige
+  app.name: eurekaclient
+  app.desc: test eureka client
+  company.name: com.qige
+  company.addr: ShenZhen China
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8000/eureka/ # 指定 eureka 注册中心
+  # 指定当前客户端在注册中心的名称
+  instance:
+    instance-id: eurekaclient-8081
+
+spring:
+  application:
+    name: eurekaclient-privoder # 指定当前微服务向外暴露名称
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+
