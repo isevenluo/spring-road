@@ -12,10 +12,16 @@ info:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:8000/eureka/ # 指定 eureka 注册中心
-  # 指定当前客户端在注册中心的名称
+      # 指定 eureka 注册中心
+      defaultZone: http://localhost:8000/eureka/
+
   instance:
+    # 指定当前客户端在注册中心的名称
     instance-id: eurekaclient-8081
+    # 设置客户端每 1 秒向服务端发送一次心跳
+    lease-renewal-interval-in-seconds: 1
+    # 设置客户端多久不向服务端发送心跳，就可以让服务端认为当前客户端已经挂了，默认 90s
+    lease-expiration-duration-in-seconds: 3
 
 spring:
   application:
@@ -26,5 +32,9 @@ management:
     web:
       exposure:
         include: "*"
+  # 开启 shutdown 命令
+  endpoint:
+    shutdown:
+      enabled: true
 
 

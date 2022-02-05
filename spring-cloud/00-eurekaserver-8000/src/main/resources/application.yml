@@ -2,10 +2,20 @@ server:
   port: 8000
 
 eureka:
+  server:
+    # 关闭自我保护机制
+    enable-self-preservation: false
+    # 设置服务器剔除不可用服务的时间间隔，默认 60s
+    eviction-interval-timer-in-ms: 4000
+    # 设置自我保护的阈值，默认 0.85
+    renewal-percent-threshold: 0.85
   instance:
-    hostname: localhost # ?? eureka ??
+    hostname: localhost # 指定 eureka 主机名
   client:
-    registerWithEureka: false # ???????????
-    fetchRegistry: false # ??????????? eureka ????
+    # 指定是否向注册中心注册自己
+    registerWithEureka: false
+    # 对外暴露服务中心地址
+    fetchRegistry: false
     serviceUrl:
-      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/ #??????????
+      # 对外暴露服务中心地址
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
