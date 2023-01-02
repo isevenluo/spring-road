@@ -24,7 +24,7 @@
         </plugins>
     </build>
     <modules>
-        <module>../spring-custom-test</module>
+        <module>../spring-custom</module>
     </modules>
     <dependencies>
         <dependency>
